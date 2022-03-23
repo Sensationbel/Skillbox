@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/doglib?useSSL=false
+    username: root
+    password: Olya352267/5
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+someParameter:
+  value: 1234

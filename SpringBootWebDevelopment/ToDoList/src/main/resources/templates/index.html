@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dogs</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" type="text/css"  href="/css/styles.css">
+</head>
+<body>
+    <div id="dog-form">
+        <form>
+            <h2>Добавление питомца</h2>
+            <label>Порода:</label>
+            <input type="text" name="breed" value="">
+            <label>Имя питомца:</label>
+            <input type="text" name="nickname" value="">
+            <hr>
+            <button id="save-dog">Сохранить</button>
+        </form>
+    </div>
+    <h1>Питомник "Собачий Рай"(<span th:text="${dogsCount}">0</span> )</h1>
+    <button id="show-add-dog-form">Добавить питомца</button>
+    <br><br>
+    <div id="dog-list">
+        <div th:each="dog : ${dogs}">
+            <a href="#" class="dog-link" th:attr="data-id=${dog.id}" th:text="${dog.breed}"></a>
+        </div>
+    </div>
+    <p th:text="${someParameter}"></p>
+</body>
+</html>
