@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UsersData">
+  <grid id="27dc6" binding="usersPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="5">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="30" y="20" width="490" height="483"/>
+    </constraints>
+    <properties>
+      <minimumSize width="400" height="300"/>
+      <preferredSize width="400" height="300"/>
+      <requestFocusEnabled value="false"/>
+      <visible value="true"/>
+    </properties>
+    <border type="bevel-lowered" title="Данные пользователя" title-justification="2" title-position="1">
+      <title-color color="-4473925"/>
+    </border>
+    <children>
+      <grid id="1b134" binding="surnamePan" layout-manager="FlowLayout" hgap="5" vgap="15" flow-align="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="163"/>
+          </grid>
+        </constraints>
+        <properties>
+          <visible value="true"/>
+        </properties>
+        <border type="none" title-position="3"/>
+        <children>
+          <component id="2aaa4" class="javax.swing.JTextField" binding="surField">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="200" height="30"/>
+            </properties>
+          </component>
+          <component id="7d7f" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <labelFor value="2aaa4"/>
+              <preferredSize width="70" height="30"/>
+              <text value="Фамилия"/>
+            </properties>
+          </component>
+          <component id="cbf2f" class="javax.swing.JTextField" binding="firstField">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="200" height="30"/>
+            </properties>
+          </component>
+          <component id="dc8ed" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <preferredSize width="50" height="30"/>
+              <text value="Имя"/>
+            </properties>
+          </component>
+          <component id="ed5af" class="javax.swing.JTextField" binding="middleField">
+            <constraints/>
+            <properties>
+              <preferredSize width="200" height="30"/>
+            </properties>
+          </component>
+          <component id="6e3d6" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <preferredSize width="100" height="30"/>
+              <text value="Отчество"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="77265" binding="singleLinePan" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <visible value="false"/>
+        </properties>
+        <border type="line">
+          <title-color color="-4473925"/>
+        </border>
+        <children>
+          <component id="cff46" class="javax.swing.JTextField" binding="fioField">
+            <constraints/>
+            <properties>
+              <preferredSize width="100" height="30"/>
+              <requestFocusEnabled value="true"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="c54c9" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Ф И О"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="985ca" binding="btnPan" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1885f" class="javax.swing.JButton" binding="button">
+            <constraints/>
+            <properties>
+              <text value="Collapse"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
