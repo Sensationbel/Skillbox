@@ -8,12 +8,10 @@ public class Station {
     }
 
     public Line getLine() {
-
         return line;
     }
 
     public String getNameStation() {
-
         return Station;
     }
 }

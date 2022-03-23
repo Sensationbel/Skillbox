@@ -2,6 +2,7 @@ import com.google.gson.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+
 import java.io.IOException;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -42,10 +43,10 @@ public class ParsingHTML {
             if (count.get() == index) {
                 count.getAndIncrement();
                 arrayStation.add(element.selectFirst("span[class=\"name\"]").text());
-                if (indexLineNumber.get() == 15 && count.get() > index){
+                if (indexLineNumber.get() == 15 && count.get() > index) {
                     objectLineAndStation.add(lineNumber[indexLineNumber.get()], arrayStation);
                 }
-            }  else if(count.get() > index || indexLineNumber.get() == 15){
+            } else if (count.get() > index || indexLineNumber.get() == 15) {
                 JsonArray jsonTemp = arrayStation.deepCopy();
                 count.set(2);
                 objectLineAndStation.add(lineNumber[indexLineNumber.get()], jsonTemp);

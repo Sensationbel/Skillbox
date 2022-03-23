@@ -14,7 +14,7 @@ public class Main {
         ParseJsonFile parsFile = new ParseJsonFile(FILE_PATH);
         try {
             parsFile.verifyInputData();
-        }catch (IllegalArgumentException ex){
+        } catch (IllegalArgumentException ex) {
             System.out.println(ex.getMessage());
         }
     }
@@ -27,7 +27,7 @@ public class Main {
             JsonObject str = parsingHTML.parseStation();
             String string = gson.toJson(str);
             try (FileWriter fileWriter = new FileWriter(FILE_PATH)) {
-              fileWriter.write(string);
+                fileWriter.write(string);
             }
         } catch (IOException e) {
             e.printStackTrace();

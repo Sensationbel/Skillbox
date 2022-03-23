@@ -11,7 +11,6 @@ public class ParseJsonFile {
     private final String filePath;
     private StringBuilder builderJsonFile;
 
-
     public ParseJsonFile(String filePath) {
         this.filePath = filePath;
     }
@@ -43,7 +42,7 @@ public class ParseJsonFile {
             });
         }
         if (!resultSearch.get()) {
-            throw new IllegalArgumentException("Line number entered incorrectly");
+            throw new IllegalArgumentException("Line number entered incorrectly!");
         }
     }
 
